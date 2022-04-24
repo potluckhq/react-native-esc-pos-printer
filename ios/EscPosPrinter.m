@@ -303,7 +303,7 @@ RCT_EXPORT_METHOD(printBuffer: (NSArray *)printBuffer
     printer = nil;
     PrinterInfo* printerInfo = [PrinterInfo sharedPrinterInfo];
     printerInfo.printerSeries = series;
-    printerInfo.lang = EPOS2_MODEL_ANK;
+    printerInfo.lang = lang;
 
     printer = [[Epos2Printer alloc] initWithPrinterSeries:printerInfo.printerSeries lang:printerInfo.lang];
 
